@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form>
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="name" /><br />
-      <label for="author">Author:</label>
-      <input type="text" id="author" name="author" /><br />
-      <bbutton id="submit" type="button">Submit</bbutton>
-    </form>
+    <button id="add-new">Add book</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="name" /><br />
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" /><br />
+          <bbutton id="submit" type="button">Submit</bbutton>
+        </form>
+      </div>
+    </div>
+
     <div id="book-list"></div>
     <script src="script.js"></script>
   </body>

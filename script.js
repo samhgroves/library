@@ -46,3 +46,22 @@ submitBtn.addEventListener("click", function () {
   newTitle.value = "";
   newAuthor.value = "";
 });
+
+const addBtn = document.getElementById("add-new");
+addBtn.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+const modal = document.getElementById("modal");
+
+const span = document.getElementsByClassName("close")[0];
+
+span.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
