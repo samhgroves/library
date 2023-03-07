@@ -1,0 +1,20 @@
+body {
+  background-color: #ecf0f1;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#book-list > div {
+  border: 5px solid #2c3e50;
+  border-radius: 15px;
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+  background-color: #3498db;
+  margin: 1rem;
+}
