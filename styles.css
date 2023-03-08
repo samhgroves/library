@@ -13,10 +13,20 @@ body {
   border: 5px solid #2c3e50;
   border-radius: 15px;
   width: 20rem;
-  height: 25rem;
+  height: 11rem;
   text-align: center;
   background-color: #3498db;
   margin: 1rem;
+  white-space: pre-line;
+  padding-top: 2rem;
+  font-size: 20px;
+}
+
+#book-list > div > button {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
 }
 
 .modal {
@@ -38,5 +48,18 @@ body {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+}
+
+.close {
+  cursor: pointer;
+}
+
+#add-new {
+  display: flex;
+  margin: 3rem auto;
+  width: 10rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
 }

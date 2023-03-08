@@ -15,7 +15,7 @@ function displayBooks() {
     // If book is not in DOM, add it
     if (!bookExists) {
       const bookDiv = document.createElement("div");
-      bookDiv.textContent = book.title + " by " + book.author;
+      bookDiv.textContent = book.title + "\nby\n" + book.author;
       bookDiv.dataset.bookIndex = index;
       bookList.appendChild(bookDiv);
       // Add delete button to each book div
@@ -65,3 +65,5 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+displayBooks();
