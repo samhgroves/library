@@ -49,10 +49,40 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #aaaaaa;
+  margin: 0.3rem 1rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  align-items: center;
+}
+
+#submit {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 1rem;
 }
 
 #add-new {
